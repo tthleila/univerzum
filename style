@@ -1,0 +1,43 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+}
+        li
+{
+    padding: 6px 0;
+}
+a
+{
+    --fill-color: #198CE6;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway,sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left/ 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+}
+&:hover{
+    background-size: 100%;
+}
+#bg-video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-image: url(../img/tm-astro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
